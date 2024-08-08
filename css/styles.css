@@ -48,6 +48,63 @@ form {
     border-radius: 5px;
 }
 
+form p:first-of-type {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--white);
+    background-color: var(--yellow);
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0.5rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--white);
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--white);
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+form p:last-of-type, input [type="submit"] {
+    padding: 0 0.8rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--grey-blue);
+}
+
+input[type="submit"]:hover { 
+    background-color: var(--grey-blue-hover);
+    cursor: pointer;
+}
+
+form div, form p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+form a {
+    color: var(--grey-blue);
+}
+
 
 
 /* ON YOUR OWN
