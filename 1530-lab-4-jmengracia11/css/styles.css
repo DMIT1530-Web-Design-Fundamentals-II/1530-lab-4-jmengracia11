@@ -42,6 +42,21 @@ section > div:first-of-type {
     padding: 1rem 1rem 0 1rem;
 }
 
+.top-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img:first-of-type {
+    max-width: 3rem;
+    height: auto;
+}
+
+.content a:first-of-type{
+    text-decoration: none;
+}
+
+
 /* Form section */
 form {
     background-color: var(--mid-grey);
@@ -61,6 +76,7 @@ form p:first-of-type {
 fieldset {
     border: none;
     padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 fieldset legend {
@@ -133,6 +149,12 @@ form p:last-of-type {
 }
 
 @media screen and (min-width: 1000px) {
+    .content img:first-of-type {
+        max-width: 3rem;
+        height: auto;
+    }
+    
+
     section {
         display: flex;
     }
