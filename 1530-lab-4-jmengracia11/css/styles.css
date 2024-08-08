@@ -1,0 +1,174 @@
+:root {
+    --black: #11151f;
+    --dark-grey: #d4d4d4;
+    --grey-blue-hover: #283040;
+    --grey-blue: #374456;
+    --mid-grey: #f1f1f1;
+    --white: #fcfcfc;
+    --yellow: #e5b261;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 2px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+section {
+    min-height: 100vh;
+}
+
+section > div:first-of-type {
+    min-height: 40rem;
+    background: url('../img/work-at-home-with-pets.webp') center / cover;
+}
+
+.content {
+    padding: 1rem 1rem 0 1rem;
+}
+
+/* Form section */
+form {
+    background-color: var(--mid-grey);
+    border-radius: 5px;
+    padding: 0 0 1rem 0;
+}
+
+form p:first-of-type {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--white);
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+fieldset legend {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--white);
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--white);
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+form p:last-of-type, input [type="submit"] {
+    padding: 0 0.8rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--grey-blue);
+}
+
+input[type="submit"]:hover { 
+    background-color: var(--grey-blue-hover);
+    cursor: pointer;
+}
+
+form div, form p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+form a {
+    color: var(--grey-blue);
+}
+
+form p:last-of-type {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        padding: 3rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset > div {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        display: flex;
+    }
+
+    .content {
+        padding: 5rem;
+        width: 49%;
+        min-width: 44rem;
+    }
+
+    .content fieldset div {
+        padding: 0 0.25rem 0 0.25rem;
+    }
+
+    section > div:first-of-type{
+        width: 49%;
+        background: url('../img/work-at-home1.webp') center / cover;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    section {
+        max-width: 100rem;
+    }
+}
+
+/* ON YOUR OWN
+
+    Write a special media query that only applies to the two smallest screen sizes. In these layouts, the brand (the logo and name of the company should):
+
+    1. be positioned at the top of the page
+    2. have white text
+    3. have a drop-shadow on the text
+
+
+    600px
+    960px
+    1600px
+*/
